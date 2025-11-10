@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+    <form action="/submit" method="POST">
+        <div class="quiz-grid">
+            <div class="quiz-item">
+                <h1>Какая столица у Франции?</h1>
+                <label>
+                    <input type="radio" name="capital" value="Paris" required> Париж
+                </label><br>
+                <label>
+                    <input type="radio" name="capital" value="London" required> Лондон
+                </label><br>
+                <label>
+                    <input type="radio" name="capital" value="Reykjavik" required> Рейкьявик
+                </label><br>
+            </div>
+            <div class="quiz-item">
+                <h1 >Сколько планет в солнечной системе?</h1>
+                <label>
+                    <input type="radio" name="Planets" value="nine" required> 9
+                </label><br>
+                <label>
+                    <input type="radio" name="Planets" value="seven" required> 7
+                </label><br>
+                <label>
+                    <input type="radio" name="Planets" value="eight" required> 8
+                </label><br>
+            </div>
+            <div class="quiz-item">
+                <h1>Какой элемент обозначается символом Au?</h1>
+                <label>
+                    <input type="radio" name="element" value="silver" required> Cеребро
+                </label><br>
+                <label>
+                    <input type="radio" name="element" value="aurum" required> Золото
+                </label><br>
+                <label>
+                    <input type="radio" name="element" value="cuprum" required> Медь
+                </label><br>
+            </div>
+            <div class="quiz-item">
+                <h1>Какое из этих произведений написал Франц Кафка?</h1>
+                <label>
+                    <input type="radio" name="Franzs_work" value="process" required> Процесс
+                </label><br>
+                <label>
+                    <input type="radio" name="Franzs_work" value="first_teacher" required> Первый учитель
+                </label><br>
+                <label>
+                    <input type="radio" name="Franzs_work" value="nausea" required> Тошнота
+                </label><br>
+            </div>
+            <div class="quiz-item">
+                <h1>Какой газ преобладает в составе атмосферы Земли?</h1>
+                <label>
+                    <input type="radio" name="gas" value="nitrogen" required> Азот
+                </label><br>
+                <label>
+                    <input type="radio" name="gas" value="Oxygen" required> Кислород
+                </label><br>
+                <label>
+                    <input type="radio" name="gas" value="carbon_dioxide" required> Углекислый газ
+                </label><br>
+            </div>
+            <div class="quiz-item">
+                <h1>Сколько хромосом у картошки?</h1>
+                <label>
+                    <input type="radio" name="chromosomes" value="38" required> 38
+                </label><br>
+                <label>
+                    <input type="radio" name="chromosomes" value="33" required> 33
+                </label><br>
+                <label>
+                    <input type="radio" name="chromosomes" value="48" required> 48
+                </label><br>
+            </div>
+        </div>
+        <button type="submit">Отправить ответы</button>
+    </form>
+{%endblock%}
